@@ -1,0 +1,1597 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "recordType": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "`team`, `squadPlayer`, `match`, `transfer`, `player`, `careerSeason`, `playerMatch`, `injury`, or `error` for a diagnostic row (never charged).",
+        "nullable": true,
+        "example": "match"
+      },
+      "source": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Transfer rows: `team` (from a team's transfer list) or `player` (from a player's career).",
+        "nullable": true,
+        "example": "team"
+      },
+      "team": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Team the row belongs to (team rows), or the player's current club (player profile).",
+        "nullable": true,
+        "example": "Arsenal"
+      },
+      "teamId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Flashscore's 8-character team id.",
+        "nullable": true,
+        "example": "hA1Zm19f"
+      },
+      "player": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Player or coach name.",
+        "nullable": true,
+        "example": "Bukayo Saka"
+      },
+      "playerId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Flashscore's 8-character player id.",
+        "nullable": true,
+        "example": "08NLEo06"
+      },
+      "url": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Flashscore page of the row's subject: team, player or match.",
+        "nullable": true,
+        "example": "https://www.flashscore.com/team/arsenal/hA1Zm19f/"
+      },
+      "sport": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Sport slug as in Flashscore URLs.",
+        "nullable": true,
+        "example": "football"
+      },
+      "country": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Team's country or region.",
+        "nullable": true,
+        "example": "England"
+      },
+      "logoUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Team logo.",
+        "nullable": true,
+        "example": "https://static.flashscore.com/res/image/data/pfchdCg5-vcNAdtF9.png"
+      },
+      "stadium": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Home stadium or arena.",
+        "nullable": true,
+        "example": "Emirates Stadium"
+      },
+      "stadiumCity": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "City of the stadium.",
+        "nullable": true,
+        "example": "London"
+      },
+      "capacity": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Stadium capacity.",
+        "nullable": true,
+        "example": 60704
+      },
+      "ranking": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "National teams: world ranking as shown (`FIFA: 4`).",
+        "nullable": true,
+        "example": "FIFA: 4"
+      },
+      "coach": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Head coach (first coach listed in the squad).",
+        "nullable": true,
+        "example": "Arteta Mikel"
+      },
+      "squadSize": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Players in the squad (coaches excluded).",
+        "nullable": true,
+        "example": 31
+      },
+      "competitions": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "description": "Competitions the team plays this season.",
+        "nullable": true,
+        "example": [
+          "Premier League",
+          "Champions League"
+        ]
+      },
+      "totalResults": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Every result Flashscore holds for the team, across all competitions and years.",
+        "nullable": true,
+        "example": 5077
+      },
+      "upcomingFixtures": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Scheduled matches listed.",
+        "nullable": true,
+        "example": 41
+      },
+      "squadScope": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Squad rows: `Total` (all competitions) or one competition's name.",
+        "nullable": true,
+        "example": "Total"
+      },
+      "positionGroup": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Squad section: Goalkeepers, Defenders, Midfielders, Forwards, Coach. Null where Flashscore groups no positions (basketball).",
+        "nullable": true,
+        "example": "Forwards"
+      },
+      "role": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "`player` or `coach`.",
+        "nullable": true,
+        "example": "player"
+      },
+      "playerUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Player's Flashscore page.",
+        "nullable": true,
+        "example": "https://www.flashscore.com/player/saka-bukayo/08NLEo06/"
+      },
+      "jerseyNumber": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Shirt number.",
+        "nullable": true,
+        "example": 7
+      },
+      "nationality": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Player's country as Flashscore lists it.",
+        "nullable": true,
+        "example": "England"
+      },
+      "age": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Age in years.",
+        "nullable": true,
+        "example": 25
+      },
+      "absence": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Squad rows: current injury or suspension. Player matches: why the player did not play (`on the bench`, `injured`, `not in the squad`).",
+        "nullable": true,
+        "example": "Muscle Injury"
+      },
+      "absenceReason": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Player matches: the injury or reason behind `absence`.",
+        "nullable": true,
+        "example": "Calf Injury"
+      },
+      "matchesPlayed": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Matches played.",
+        "nullable": true,
+        "example": 5
+      },
+      "minutesPlayed": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Minutes played. Basketball career rows: minutes per game. Player matches: minutes in that match (`40:26` becomes 40.43).",
+        "nullable": true,
+        "example": 450
+      },
+      "goals": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Goals.",
+        "nullable": true,
+        "example": 3
+      },
+      "assists": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Assists (per game for basketball career rows).",
+        "nullable": true,
+        "example": 2
+      },
+      "yellowCards": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Yellow cards.",
+        "nullable": true,
+        "example": 1
+      },
+      "redCards": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Red cards.",
+        "nullable": true,
+        "example": 0
+      },
+      "points": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Points (hockey: goals + assists; basketball career rows: per game).",
+        "nullable": true,
+        "example": 21.3
+      },
+      "rebounds": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Basketball rebounds (per game in career rows).",
+        "nullable": true,
+        "example": 6
+      },
+      "steals": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Basketball steals (per game in career rows).",
+        "nullable": true,
+        "example": 1.2
+      },
+      "blocks": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Basketball blocks (per game in career rows).",
+        "nullable": true,
+        "example": 0.5
+      },
+      "turnovers": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Basketball turnovers in the match.",
+        "nullable": true,
+        "example": 4
+      },
+      "savePercentage": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Goalkeeper save percentage.",
+        "nullable": true,
+        "example": 69.2
+      },
+      "goalsAgainstAverage": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Hockey goalkeeper goals-against average.",
+        "nullable": true,
+        "example": 2.41
+      },
+      "cleanSheets": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Goalkeeper clean sheets (shutouts).",
+        "nullable": true,
+        "example": 3
+      },
+      "penaltyMinutes": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Hockey penalty minutes.",
+        "nullable": true,
+        "example": 4
+      },
+      "saves": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Goalkeeper saves in the match.",
+        "nullable": true,
+        "example": 3
+      },
+      "shotsOnTargetFaced": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Football goalkeeper: shots on target faced in the match.",
+        "nullable": true,
+        "example": 5
+      },
+      "timeOnIce": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Hockey time on ice in minutes.",
+        "nullable": true,
+        "example": 18.53
+      },
+      "rating": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Flashscore player rating (average for career rows).",
+        "nullable": true,
+        "example": 7.5
+      },
+      "ratingRank": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Player matches: 1-3 when the player was among the team's top three rated.",
+        "nullable": true,
+        "example": 1
+      },
+      "eventId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Flashscore's 8-character match id.",
+        "nullable": true,
+        "example": "AeCCmlWQ"
+      },
+      "competition": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Competition name.",
+        "nullable": true,
+        "example": "Premier League"
+      },
+      "competitionCountry": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Country or region of the competition.",
+        "nullable": true,
+        "example": "England"
+      },
+      "competitionStage": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Stage of the competition when it has several (`League phase`, `Play Offs`).",
+        "nullable": true,
+        "example": "League phase"
+      },
+      "competitionUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Competition page on Flashscore.",
+        "nullable": true,
+        "example": "https://www.flashscore.com/football/england/premier-league/"
+      },
+      "round": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Round label.",
+        "nullable": true,
+        "example": "Round 5"
+      },
+      "startTime": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Kick-off, ISO 8601 UTC. History before 1970 is included.",
+        "nullable": true,
+        "example": "2026-09-19T14:00:00Z"
+      },
+      "status": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "`finished`, `scheduled` or `live`.",
+        "nullable": true,
+        "example": "finished"
+      },
+      "statusDetail": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Flashscore's status label: Finished, After Extra Time, After Penalties, Postponed, Cancelled, Awarded ...",
+        "nullable": true,
+        "example": "Finished"
+      },
+      "venue": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Match rows: `home` or `away` for the team.",
+        "nullable": true,
+        "example": "home"
+      },
+      "opponent": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Match rows: the other team.",
+        "nullable": true,
+        "example": "Manchester Utd"
+      },
+      "opponentId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Match rows: the other team's id.",
+        "nullable": true,
+        "example": "ppjDR086"
+      },
+      "result": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "`W`, `D` or `L` for the team (match rows) or the player's team (player matches).",
+        "nullable": true,
+        "example": "W"
+      },
+      "homeTeam": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Home team.",
+        "nullable": true,
+        "example": "Arsenal"
+      },
+      "homeTeamId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Home team id.",
+        "nullable": true,
+        "example": "hA1Zm19f"
+      },
+      "awayTeam": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Away team.",
+        "nullable": true,
+        "example": "Manchester Utd"
+      },
+      "awayTeamId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Away team id.",
+        "nullable": true,
+        "example": "ppjDR086"
+      },
+      "homeScore": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Home final score (after extra time; penalties in `decidedBy`).",
+        "nullable": true,
+        "example": 2
+      },
+      "awayScore": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Away final score.",
+        "nullable": true,
+        "example": 3
+      },
+      "homeScoreRegularTime": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Home score after regular time.",
+        "nullable": true,
+        "example": 2
+      },
+      "awayScoreRegularTime": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Away score after regular time.",
+        "nullable": true,
+        "example": 3
+      },
+      "halfTimeScore": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Football half-time score, home-away.",
+        "nullable": true,
+        "example": "1-1"
+      },
+      "periodScores": {
+        "type": [
+          "array",
+          "null"
+        ],
+        "description": "Score per period: halves, quarters or periods, then overtime.",
+        "nullable": true,
+        "example": [
+          {
+            "home": 1,
+            "away": 1
+          },
+          {
+            "home": 1,
+            "away": 2
+          }
+        ]
+      },
+      "decidedBy": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "`regular-time`, `extra-time` or `penalties` (finished matches).",
+        "nullable": true,
+        "example": "regular-time"
+      },
+      "winner": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "`home`, `away` or `draw`.",
+        "nullable": true,
+        "example": "away"
+      },
+      "date": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Transfer, player-match date (YYYY-MM-DD).",
+        "nullable": true,
+        "example": "2026-09-02"
+      },
+      "direction": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Team transfers: `in` (arrival) or `out` (departure).",
+        "nullable": true,
+        "example": "out"
+      },
+      "transferType": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Transfer, Loan, Return from loan, Free agent, End of career ...",
+        "nullable": true,
+        "example": "Transfer"
+      },
+      "fee": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Fee as shown. Null when undisclosed or free.",
+        "nullable": true,
+        "example": "€70.0m"
+      },
+      "feeAmount": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Fee as a number in `feeCurrency`.",
+        "nullable": true,
+        "example": 70000000
+      },
+      "feeCurrency": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "ISO currency of the fee.",
+        "nullable": true,
+        "example": "EUR"
+      },
+      "fromTeam": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Club the player left.",
+        "nullable": true,
+        "example": "Arsenal"
+      },
+      "fromTeamId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Id of the club the player left.",
+        "nullable": true,
+        "example": "hA1Zm19f"
+      },
+      "fromTeamUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Page of the club the player left.",
+        "nullable": true,
+        "example": "https://www.flashscore.com/team/arsenal/hA1Zm19f/"
+      },
+      "toTeam": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Club the player joined. Null for a release with no new club yet.",
+        "nullable": true,
+        "example": "Al Hilal"
+      },
+      "toTeamId": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Id of the club the player joined.",
+        "nullable": true,
+        "example": "hxxcePl9"
+      },
+      "toTeamUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Page of the club the player joined.",
+        "nullable": true,
+        "example": "https://www.flashscore.com/team/al-hilal/hxxcePl9/"
+      },
+      "position": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Position, or `Coach`.",
+        "nullable": true,
+        "example": "Forward"
+      },
+      "teamUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Team page (player profile: current club; career rows: that season's club).",
+        "nullable": true,
+        "example": "https://www.flashscore.com/team/arsenal/hA1Zm19f/"
+      },
+      "dateOfBirth": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Date of birth (YYYY-MM-DD).",
+        "nullable": true,
+        "example": "2001-09-05"
+      },
+      "marketValue": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Market value as shown (football).",
+        "nullable": true,
+        "example": "€113.9m"
+      },
+      "marketValueAmount": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Market value as a number in `marketValueCurrency`.",
+        "nullable": true,
+        "example": 113900000
+      },
+      "marketValueCurrency": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "ISO currency of the market value.",
+        "nullable": true,
+        "example": "EUR"
+      },
+      "contractExpires": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Contract end date (YYYY-MM-DD).",
+        "nullable": true,
+        "example": "2030-06-30"
+      },
+      "heightCm": {
+        "type": [
+          "number",
+          "null"
+        ],
+        "description": "Height in cm (where Flashscore lists it, e.g. basketball).",
+        "nullable": true,
+        "example": 206
+      },
+      "photoUrl": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Player photo.",
+        "nullable": true,
+        "example": "https://static.flashscore.com/res/image/data/pCHmmTYA-GxPHNWyM.png"
+      },
+      "currentInjury": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Current injury, if any.",
+        "nullable": true,
+        "example": "Hamstring Injury"
+      },
+      "injuredUntil": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Expected return of the current injury (YYYY-MM-DD).",
+        "nullable": true,
+        "example": "2026-10-15"
+      },
+      "careerTotals": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "description": "Career totals per competition type (`league`, `domestic-cup`, `international-cup`, `national-team`): counts only (matches, goals, assists, cards, clean sheets).",
+        "nullable": true,
+        "example": {
+          "league": {
+            "matchesPlayed": 255,
+            "goals": 73,
+            "assists": 50
+          }
+        }
+      },
+      "otherInfo": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "description": "Any other header field Flashscore shows for the player, label -> value.",
+        "nullable": true,
+        "example": {
+          "Weight": "80 kg"
+        }
+      },
+      "competitionType": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Career rows: `league`, `domestic-cup`, `international-cup` or `national-team`.",
+        "nullable": true,
+        "example": "league"
+      },
+      "season": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Season as Flashscore shows it.",
+        "nullable": true,
+        "example": "2026/2027"
+      },
+      "statsPerGame": {
+        "type": [
+          "boolean",
+          "null"
+        ],
+        "description": "Career rows: true when the stats are per-game averages (basketball).",
+        "nullable": true,
+        "example": false
+      },
+      "injury": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Injury name.",
+        "nullable": true,
+        "example": "Thigh Injury"
+      },
+      "from": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Injury start (YYYY-MM-DD).",
+        "nullable": true,
+        "example": "2025-08-24"
+      },
+      "until": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Injury end (YYYY-MM-DD).",
+        "nullable": true,
+        "example": "2025-09-20"
+      },
+      "isCurrent": {
+        "type": [
+          "boolean",
+          "null"
+        ],
+        "description": "Injury rows: true while the injury is ongoing.",
+        "nullable": true,
+        "example": false
+      },
+      "query": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Error rows: the search query that matched nothing.",
+        "nullable": true,
+        "example": "zzzz"
+      },
+      "error": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Error rows: `INVALID_INPUT`, `TEAM_NOT_FOUND`, `PLAYER_NOT_FOUND`, `NO_SEARCH_MATCH`, `UNSUPPORTED_PLAYER`.",
+        "nullable": true,
+        "example": "TEAM_NOT_FOUND"
+      },
+      "errorMessage": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "description": "Error rows: what went wrong and how to fix it.",
+        "nullable": true,
+        "example": "Flashscore has no team at ... (not charged)."
+      }
+    }
+  },
+  "views": {
+    "teams": {
+      "title": "Teams",
+      "description": "One row per team: venue, coach, squad size and history size.",
+      "transformation": {
+        "fields": [
+          "logoUrl",
+          "team",
+          "sport",
+          "country",
+          "stadium",
+          "stadiumCity",
+          "capacity",
+          "ranking",
+          "coach",
+          "squadSize",
+          "competitions",
+          "totalResults",
+          "url"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "logoUrl": {
+            "label": "Logo",
+            "format": "image"
+          },
+          "team": {
+            "label": "Team",
+            "format": "text"
+          },
+          "sport": {
+            "label": "Sport",
+            "format": "text"
+          },
+          "country": {
+            "label": "Country",
+            "format": "text"
+          },
+          "stadium": {
+            "label": "Stadium",
+            "format": "text"
+          },
+          "stadiumCity": {
+            "label": "City",
+            "format": "text"
+          },
+          "capacity": {
+            "label": "Capacity",
+            "format": "number"
+          },
+          "ranking": {
+            "label": "Ranking",
+            "format": "text"
+          },
+          "coach": {
+            "label": "Coach",
+            "format": "text"
+          },
+          "squadSize": {
+            "label": "Squad",
+            "format": "number"
+          },
+          "competitions": {
+            "label": "Competitions",
+            "format": "object"
+          },
+          "totalResults": {
+            "label": "Results",
+            "format": "number"
+          },
+          "url": {
+            "label": "URL",
+            "format": "link"
+          }
+        }
+      }
+    },
+    "squad": {
+      "title": "Squad",
+      "description": "Players and coaches with their season stats.",
+      "transformation": {
+        "fields": [
+          "team",
+          "squadScope",
+          "positionGroup",
+          "jerseyNumber",
+          "player",
+          "nationality",
+          "age",
+          "matchesPlayed",
+          "minutesPlayed",
+          "goals",
+          "assists",
+          "yellowCards",
+          "redCards",
+          "absence",
+          "playerUrl"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "team": {
+            "label": "Team",
+            "format": "text"
+          },
+          "squadScope": {
+            "label": "Scope",
+            "format": "text"
+          },
+          "positionGroup": {
+            "label": "Group",
+            "format": "text"
+          },
+          "jerseyNumber": {
+            "label": "#",
+            "format": "number"
+          },
+          "player": {
+            "label": "Player",
+            "format": "text"
+          },
+          "nationality": {
+            "label": "Nationality",
+            "format": "text"
+          },
+          "age": {
+            "label": "Age",
+            "format": "number"
+          },
+          "matchesPlayed": {
+            "label": "MP",
+            "format": "number"
+          },
+          "minutesPlayed": {
+            "label": "Min",
+            "format": "number"
+          },
+          "goals": {
+            "label": "Goals",
+            "format": "number"
+          },
+          "assists": {
+            "label": "Assists",
+            "format": "number"
+          },
+          "yellowCards": {
+            "label": "YC",
+            "format": "number"
+          },
+          "redCards": {
+            "label": "RC",
+            "format": "number"
+          },
+          "absence": {
+            "label": "Absence",
+            "format": "text"
+          },
+          "playerUrl": {
+            "label": "URL",
+            "format": "link"
+          }
+        }
+      }
+    },
+    "matches": {
+      "title": "Team matches",
+      "description": "Results and fixtures from each team's point of view.",
+      "transformation": {
+        "fields": [
+          "startTime",
+          "team",
+          "competition",
+          "venue",
+          "opponent",
+          "homeTeam",
+          "homeScore",
+          "awayScore",
+          "awayTeam",
+          "result",
+          "halfTimeScore",
+          "statusDetail",
+          "url"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "startTime": {
+            "label": "Start",
+            "format": "date"
+          },
+          "team": {
+            "label": "Team",
+            "format": "text"
+          },
+          "competition": {
+            "label": "Competition",
+            "format": "text"
+          },
+          "venue": {
+            "label": "Venue",
+            "format": "text"
+          },
+          "opponent": {
+            "label": "Opponent",
+            "format": "text"
+          },
+          "homeTeam": {
+            "label": "Home",
+            "format": "text"
+          },
+          "homeScore": {
+            "label": "H",
+            "format": "number"
+          },
+          "awayScore": {
+            "label": "A",
+            "format": "number"
+          },
+          "awayTeam": {
+            "label": "Away",
+            "format": "text"
+          },
+          "result": {
+            "label": "Result",
+            "format": "text"
+          },
+          "halfTimeScore": {
+            "label": "HT",
+            "format": "text"
+          },
+          "statusDetail": {
+            "label": "Status",
+            "format": "text"
+          },
+          "url": {
+            "label": "URL",
+            "format": "link"
+          }
+        }
+      }
+    },
+    "transfers": {
+      "title": "Transfers",
+      "description": "Arrivals and departures (team lists) and career moves (players).",
+      "transformation": {
+        "fields": [
+          "date",
+          "player",
+          "nationality",
+          "direction",
+          "fromTeam",
+          "toTeam",
+          "transferType",
+          "fee",
+          "feeAmount",
+          "source",
+          "playerUrl"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "date": {
+            "label": "Date",
+            "format": "text"
+          },
+          "player": {
+            "label": "Player",
+            "format": "text"
+          },
+          "nationality": {
+            "label": "Nationality",
+            "format": "text"
+          },
+          "direction": {
+            "label": "In/out",
+            "format": "text"
+          },
+          "fromTeam": {
+            "label": "From",
+            "format": "text"
+          },
+          "toTeam": {
+            "label": "To",
+            "format": "text"
+          },
+          "transferType": {
+            "label": "Type",
+            "format": "text"
+          },
+          "fee": {
+            "label": "Fee",
+            "format": "text"
+          },
+          "feeAmount": {
+            "label": "Fee amount",
+            "format": "number"
+          },
+          "source": {
+            "label": "Source",
+            "format": "text"
+          },
+          "playerUrl": {
+            "label": "URL",
+            "format": "link"
+          }
+        }
+      }
+    },
+    "players": {
+      "title": "Players",
+      "description": "Player profiles: club, age, market value, contract.",
+      "transformation": {
+        "fields": [
+          "photoUrl",
+          "player",
+          "position",
+          "team",
+          "nationality",
+          "age",
+          "dateOfBirth",
+          "marketValue",
+          "contractExpires",
+          "heightCm",
+          "currentInjury",
+          "careerTotals",
+          "url"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "photoUrl": {
+            "label": "Photo",
+            "format": "image"
+          },
+          "player": {
+            "label": "Player",
+            "format": "text"
+          },
+          "position": {
+            "label": "Position",
+            "format": "text"
+          },
+          "team": {
+            "label": "Club",
+            "format": "text"
+          },
+          "nationality": {
+            "label": "Nationality",
+            "format": "text"
+          },
+          "age": {
+            "label": "Age",
+            "format": "number"
+          },
+          "dateOfBirth": {
+            "label": "Born",
+            "format": "text"
+          },
+          "marketValue": {
+            "label": "Market value",
+            "format": "text"
+          },
+          "contractExpires": {
+            "label": "Contract until",
+            "format": "text"
+          },
+          "heightCm": {
+            "label": "Height",
+            "format": "number"
+          },
+          "currentInjury": {
+            "label": "Injury",
+            "format": "text"
+          },
+          "careerTotals": {
+            "label": "Career totals",
+            "format": "object"
+          },
+          "url": {
+            "label": "URL",
+            "format": "link"
+          }
+        }
+      }
+    },
+    "career": {
+      "title": "Career",
+      "description": "One row per player, season, club and competition.",
+      "transformation": {
+        "fields": [
+          "player",
+          "season",
+          "competitionType",
+          "competition",
+          "team",
+          "matchesPlayed",
+          "goals",
+          "assists",
+          "points",
+          "rating",
+          "yellowCards",
+          "redCards",
+          "cleanSheets",
+          "statsPerGame"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "player": {
+            "label": "Player",
+            "format": "text"
+          },
+          "season": {
+            "label": "Season",
+            "format": "text"
+          },
+          "competitionType": {
+            "label": "Type",
+            "format": "text"
+          },
+          "competition": {
+            "label": "Competition",
+            "format": "text"
+          },
+          "team": {
+            "label": "Team",
+            "format": "text"
+          },
+          "matchesPlayed": {
+            "label": "MP",
+            "format": "number"
+          },
+          "goals": {
+            "label": "Goals",
+            "format": "number"
+          },
+          "assists": {
+            "label": "Assists",
+            "format": "number"
+          },
+          "points": {
+            "label": "Pts",
+            "format": "number"
+          },
+          "rating": {
+            "label": "Rating",
+            "format": "number"
+          },
+          "yellowCards": {
+            "label": "YC",
+            "format": "number"
+          },
+          "redCards": {
+            "label": "RC",
+            "format": "number"
+          },
+          "cleanSheets": {
+            "label": "CS",
+            "format": "number"
+          },
+          "statsPerGame": {
+            "label": "Per game",
+            "format": "boolean"
+          }
+        }
+      }
+    },
+    "playerMatches": {
+      "title": "Player matches",
+      "description": "Each player's last 10 matches with rating and stats.",
+      "transformation": {
+        "fields": [
+          "date",
+          "player",
+          "competition",
+          "homeTeam",
+          "homeScore",
+          "awayScore",
+          "awayTeam",
+          "result",
+          "rating",
+          "minutesPlayed",
+          "goals",
+          "assists",
+          "absence",
+          "url"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "date": {
+            "label": "Date",
+            "format": "text"
+          },
+          "player": {
+            "label": "Player",
+            "format": "text"
+          },
+          "competition": {
+            "label": "Competition",
+            "format": "text"
+          },
+          "homeTeam": {
+            "label": "Home",
+            "format": "text"
+          },
+          "homeScore": {
+            "label": "H",
+            "format": "number"
+          },
+          "awayScore": {
+            "label": "A",
+            "format": "number"
+          },
+          "awayTeam": {
+            "label": "Away",
+            "format": "text"
+          },
+          "result": {
+            "label": "Result",
+            "format": "text"
+          },
+          "rating": {
+            "label": "Rating",
+            "format": "number"
+          },
+          "minutesPlayed": {
+            "label": "Min",
+            "format": "number"
+          },
+          "goals": {
+            "label": "Goals",
+            "format": "number"
+          },
+          "assists": {
+            "label": "Assists",
+            "format": "number"
+          },
+          "absence": {
+            "label": "Absence",
+            "format": "text"
+          },
+          "url": {
+            "label": "URL",
+            "format": "link"
+          }
+        }
+      }
+    },
+    "injuries": {
+      "title": "Injuries",
+      "description": "Injury history per player.",
+      "transformation": {
+        "fields": [
+          "player",
+          "injury",
+          "from",
+          "until",
+          "isCurrent"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {
+          "player": {
+            "label": "Player",
+            "format": "text"
+          },
+          "injury": {
+            "label": "Injury",
+            "format": "text"
+          },
+          "from": {
+            "label": "From",
+            "format": "text"
+          },
+          "until": {
+            "label": "Until",
+            "format": "text"
+          },
+          "isCurrent": {
+            "label": "Current",
+            "format": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

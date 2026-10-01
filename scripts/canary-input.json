@@ -1,0 +1,10 @@
+{
+  "teamUrls": ["https://www.flashscore.com/team/arsenal/hA1Zm19f/"],
+  "searchQueries": ["Bukayo Saka"],
+  "searchSport": "football",
+  "teamSections": ["profile", "squad", "results", "fixtures", "transfers"],
+  "maxResultsPerTeam": 120,
+  "maxTransfersPerTeam": 40,
+  "playerSections": ["profile", "career", "lastMatches", "transfers", "injuries"],
+  "maxItems": 2000
+}

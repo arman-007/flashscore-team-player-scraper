@@ -1,0 +1,1317 @@
+[
+ {
+  "id": "08NLEo06",
+  "url": "saka-bukayo",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Saka Bukayo",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 198,
+   "name": "England",
+   "images": [
+    {
+     "path": "2yGc8QR6-fqCjSvcO.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "dbF17psD-fqCjSvcO.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "SGpakbbs-GxPHNWyM.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "pCHmmTYA-GxPHNWyM.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "hA1Zm19f",
+    "name": "Arsenal",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   },
+   {
+    "id": "j9N9ZNFA",
+    "name": "England",
+    "kind": "NOMINATION",
+    "participantType": {
+     "id": 17,
+     "name": "National"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "AeBHWNls",
+  "url": "sakamoto-rei",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakamoto Rei",
+  "type": {
+   "id": 3,
+   "name": "Player"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 2,
+   "name": "Tennis"
+  },
+  "favouriteKey": {
+   "web": "2_AeBHWNls",
+   "portable": "2_AeBHWNls"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "6PtFpCq4-QokFTpDM.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "4MN2eTcM-4xlJS4SS.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "zZoU3kJa",
+  "url": "sakatsume-himeno",
+  "gender": {
+   "id": 2,
+   "name": "Women"
+  },
+  "name": "Sakatsume Himeno",
+  "type": {
+   "id": 3,
+   "name": "Player"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 2,
+   "name": "Tennis"
+  },
+  "favouriteKey": {
+   "web": "2_zZoU3kJa",
+   "portable": "2_zZoU3kJa"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "8UEXFRcs-l2yuHAxO.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "hxBKQrCa-l2yuHAxO.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "E9z4tGK2",
+  "url": "sakamoto-pedro",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakamoto Pedro",
+  "type": {
+   "id": 3,
+   "name": "Player"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 2,
+   "name": "Tennis"
+  },
+  "favouriteKey": {
+   "web": "2_E9z4tGK2",
+   "portable": "2_E9z4tGK2"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 39,
+   "name": "Brazil",
+   "images": [
+    {
+     "path": "YNWuNb6e-faj6j70Q.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "SpWqMIL1-faj6j70Q.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "Wli1I7tm-OvlWubWh.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "ETnlTOf5-OvlWubWh.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "bwXXoVMU",
+  "url": "sakai-motomu",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakai Motomu",
+  "type": {
+   "id": 3,
+   "name": "Player"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 14,
+   "name": "Darts"
+  },
+  "favouriteKey": {
+   "web": "14_bwXXoVMU",
+   "portable": "14_bwXXoVMU"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "6qg9g5q4-vsNtkldC.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "lOld4McM-vsNtkldC.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "hAB114Wk",
+  "url": "sakar-faik",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakar Faik",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 77,
+   "name": "France",
+   "images": [
+    {
+     "path": "YwNQTQ7C-IqEa4ziS.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "S0MUSpNI-IqEa4ziS.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "Y7Gzy3Nh-8Kw41Rbf.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "jo2OoKyB-8Kw41Rbf.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "fTVNku3I",
+    "name": "Augsburg",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   },
+   {
+    "id": "EekvEtnc",
+    "name": "Augsburg II",
+    "kind": "NOMINATION",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "2Jzfymql",
+  "url": "sakaryaspor",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakaryaspor",
+  "type": {
+   "id": 2,
+   "name": "Team"
+  },
+  "participantTypes": [
+   {
+    "id": 1,
+    "name": "Team"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": "1_2Jzfymql",
+   "portable": "1_2Jzfymql"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 191,
+   "name": "Turkey",
+   "images": [
+    {
+     "path": "hSevcgP6-p4HXraP1.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "nkerdDvD-p4HXraP1.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "EkAaiTnh-Cr1r5U90.png",
+    "usageId": 2,
+    "variantTypeId": 2
+   },
+   {
+    "path": "zL4j14GG-Cr1r5U90.png",
+    "usageId": 2,
+    "variantTypeId": 15
+   },
+   {
+    "path": "GGcq8CT0-Cr1r5U90.png",
+    "usageId": 2,
+    "variantTypeId": 37
+   }
+  ],
+  "teams": null,
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "8MzVh5NL",
+  "url": "sakamoto-tatsuhiro",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakamoto Tatsuhiro",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "2B239ooL-8O9UjR4e.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "rPMF3GEa-8O9UjR4e.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "GOvB22xg",
+    "name": "Coventry",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "8rAlD1SF",
+  "url": "opsahl-sakarias",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Opsahl Sakarias",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 145,
+   "name": "Norway",
+   "images": [
+    {
+     "path": "4rP9VC8C-S4C4sn1q.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "b5ODUWNI-S4C4sn1q.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "jTlq66tm-23vR9K6n.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "8OLX3yHG-23vR9K6n.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "QBbt6ivB",
+    "name": "Brann",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "SIJGSk10",
+  "url": "sakala-fashion",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakala Fashion",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 209,
+   "name": "Zambia",
+   "images": [
+    {
+     "path": "2RQnBwTN-2upfLKrF.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "W0VjAcrU-2upfLKrF.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "Q1DeG2vm-l4hqwmvR.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "ruaqRJh5-l4hqwmvR.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "zBS458hb",
+    "name": "Zambia",
+    "kind": "NOMINATION",
+    "participantType": {
+     "id": 17,
+     "name": "National"
+    }
+   },
+   {
+    "id": "Meknfpi2",
+    "name": "Al Fayha",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "EwlYbdEo",
+  "url": "sakala-benson",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakala Benson",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 209,
+   "name": "Zambia",
+   "images": [
+    {
+     "path": "2RQnBwTN-2upfLKrF.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "W0VjAcrU-2upfLKrF.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "WKw0ZEqL-r7sA7Fa3.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "hz8BtWjl-r7sA7Fa3.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "zBS458hb",
+    "name": "Zambia",
+    "kind": "NOMINATION",
+    "participantType": {
+     "id": 17,
+     "name": "National"
+    }
+   },
+   {
+    "id": "fuXqHnxa",
+    "name": "Bohemians 1905",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "fXlMvsvQ",
+  "url": "sakamoto-isa",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakamoto Isa",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "fulOra2b-IFr7pfTE.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "CIZBgGGG-IFr7pfTE.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "hYaM5Gqp",
+    "name": "Westerlo",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "SlgVuZiH",
+  "url": "okagawa-sakaguchi-emiko",
+  "gender": {
+   "id": 2,
+   "name": "Women"
+  },
+  "name": "Okagawa Sakaguchi Emiko",
+  "type": {
+   "id": 3,
+   "name": "Player"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 2,
+   "name": "Tennis"
+  },
+  "favouriteKey": {
+   "web": "2_SlgVuZiH",
+   "portable": "2_SlgVuZiH"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [],
+  "teams": [],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "ttdPx7nF",
+  "url": "sakata-kimika",
+  "gender": {
+   "id": 2,
+   "name": "Women"
+  },
+  "name": "Sakata Kimika",
+  "type": {
+   "id": 3,
+   "name": "Player"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 2,
+   "name": "Tennis"
+  },
+  "favouriteKey": {
+   "web": "2_ttdPx7nF",
+   "portable": "2_ttdPx7nF"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [],
+  "teams": [],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "EuzNx19J",
+  "url": "sakana-botsile",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakana Botsile",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 38,
+   "name": "Botswana",
+   "images": [
+    {
+     "path": "CQkxOhn1-GWsTISve.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "KjktNC17-GWsTISve.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "EaNaYxKh-SMczEII1.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "ImOnqfYA-SMczEII1.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "naNvXTwI",
+    "name": "Botswana",
+    "kind": "NOMINATION",
+    "participantType": {
+     "id": 17,
+     "name": "National"
+    }
+   },
+   {
+    "id": "xzhtHejD",
+    "name": "Orapa United",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "tzHwwqht",
+  "url": "sakari-daniel",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakari Daniel",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 103,
+   "name": "Kenya",
+   "images": [
+    {
+     "path": "GpBvGiOk-6cpDGcKO.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "pKFrFBwd-6cpDGcKO.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "hdmrHTLh-QcXk4nRb.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "jgUVRpzB-QcXk4nRb.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "CIAJw1QK",
+    "name": "Kenya",
+    "kind": "NOMINATION",
+    "participantType": {
+     "id": 17,
+     "name": "National"
+    }
+   },
+   {
+    "id": "EkWjHR8e",
+    "name": "Kariobangi Sharks",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   },
+   {
+    "id": "b9c0Ziqo",
+    "name": "Tusker",
+    "kind": "NOMINATION",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "OdZIpjH2",
+  "url": "sakai-hiroki",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakai Hiroki",
+  "type": {
+   "id": 4,
+   "name": "PlayerInTeam"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 1,
+   "name": "Soccer"
+  },
+  "favouriteKey": {
+   "web": null,
+   "portable": null
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "xWGAn2Mh-SfVE1g49.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "UaAhcJzB-SfVE1g49.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [
+   {
+    "id": "2J7jacL6",
+    "name": "Auckland FC",
+    "kind": "TEAM",
+    "participantType": {
+     "id": 1,
+     "name": "Team"
+    }
+   }
+  ],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "Mi1Tzd85",
+  "url": "sakai-kazumasa",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakai Kazumasa",
+  "type": {
+   "id": 3,
+   "name": "Player"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 21,
+   "name": "Badminton"
+  },
+  "favouriteKey": {
+   "web": "21_Mi1Tzd85",
+   "portable": "21_Mi1Tzd85"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "d4flN03b-bFX91URH.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "f1yxYHHG-bFX91URH.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "n3HZOhN6",
+  "url": "sakai-ryuhei",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakai Ryuhei",
+  "type": {
+   "id": 3,
+   "name": "Player"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 28,
+   "name": "Mixed martial arts"
+  },
+  "favouriteKey": {
+   "web": "28_n3HZOhN6",
+   "portable": "28_n3HZOhN6"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 100,
+   "name": "Japan",
+   "images": [
+    {
+     "path": "Cp8XHAq1-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "677yHUb7-Sz3v6Urh.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [
+   {
+    "path": "S6kKskNh-lzw46IxA.jpeg",
+    "usageId": 3,
+    "variantTypeId": 3
+   },
+   {
+    "path": "K0C9uKcM-lzw46IxA.png",
+    "usageId": 3,
+    "variantTypeId": 15
+   }
+  ],
+  "teams": [],
+  "defaultTournament": null,
+  "superTemplate": null
+ },
+ {
+  "id": "2uZI9pQs",
+  "url": "sakagute-tiago",
+  "gender": {
+   "id": 1,
+   "name": "Men"
+  },
+  "name": "Sakagute Tiago",
+  "type": {
+   "id": 3,
+   "name": "Player"
+  },
+  "participantTypes": [
+   {
+    "id": 2,
+    "name": "Player"
+   }
+  ],
+  "sport": {
+   "id": 25,
+   "name": "Table tennis"
+  },
+  "favouriteKey": {
+   "web": "25_2uZI9pQs",
+   "portable": "25_2uZI9pQs"
+  },
+  "flagId": null,
+  "defaultCountry": {
+   "id": 39,
+   "name": "Brazil",
+   "images": [
+    {
+     "path": "YNWuNb6e-faj6j70Q.png",
+     "usageId": 14,
+     "variantTypeId": 87
+    },
+    {
+     "path": "SpWqMIL1-faj6j70Q.png",
+     "usageId": 14,
+     "variantTypeId": 88
+    }
+   ]
+  },
+  "images": [],
+  "teams": [],
+  "defaultTournament": null,
+  "superTemplate": null
+ }
+]

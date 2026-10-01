@@ -1,0 +1,109 @@
+{
+  "title": "Flashscore Team & Player Scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "teamUrls": {
+      "title": "Team URLs",
+      "type": "array",
+      "description": "Flashscore team pages, any team sport and any Flashscore edition (.com, .co.uk ...), e.g. https://www.flashscore.com/team/arsenal/hA1Zm19f/. Sub-pages such as .../squad/ work too.",
+      "editor": "stringList",
+      "prefill": ["https://www.flashscore.com/team/arsenal/hA1Zm19f/"],
+      "example": [
+        "https://www.flashscore.com/team/arsenal/hA1Zm19f/",
+        "https://www.flashscore.com/team/los-angeles-lakers/ngegZ8bg/"
+      ],
+      "sectionCaption": "Who to scrape",
+      "sectionDescription": "Any mix of team URLs, player URLs and plain names. Names are looked up with Flashscore's own search; the best team or player match is scraped."
+    },
+    "playerUrls": {
+      "title": "Player URLs",
+      "type": "array",
+      "description": "Flashscore player or coach pages, e.g. https://www.flashscore.com/player/saka-bukayo/08NLEo06/.",
+      "editor": "stringList",
+      "example": ["https://www.flashscore.com/player/saka-bukayo/08NLEo06/"]
+    },
+    "searchQueries": {
+      "title": "Search by name",
+      "type": "array",
+      "description": "Team or player names, e.g. \"Real Madrid\" or \"Bukayo Saka\". Each name scrapes Flashscore's best team or team-sport player match.",
+      "editor": "stringList",
+      "example": ["Real Madrid", "Bukayo Saka"]
+    },
+    "searchSport": {
+      "title": "Search sport",
+      "type": "string",
+      "description": "Only match names in this sport (\"Rapperswil\" is both a football club and a hockey club).",
+      "editor": "select",
+      "enum": ["", "football", "basketball", "hockey", "handball", "volleyball", "american-football", "baseball", "rugby-union", "rugby-league", "futsal", "floorball", "aussie-rules", "water-polo", "field-hockey", "cricket"],
+      "enumTitles": ["Any sport", "Football", "Basketball", "Hockey", "Handball", "Volleyball", "American football", "Baseball", "Rugby union", "Rugby league", "Futsal", "Floorball", "Aussie rules", "Water polo", "Field hockey", "Cricket"],
+      "default": ""
+    },
+    "teamSections": {
+      "title": "Team data",
+      "type": "array",
+      "description": "Profile: venue, capacity, coach, squad size. Squad: every player and coach with season stats and injuries. Results: past matches (newest first). Fixtures: every scheduled match. Transfers: arrivals and departures with fees (newest first).",
+      "editor": "select",
+      "items": {
+        "type": "string",
+        "enum": ["profile", "squad", "results", "fixtures", "transfers"],
+        "enumTitles": ["Profile", "Squad", "Results", "Fixtures", "Transfers"]
+      },
+      "default": ["profile", "squad", "results", "fixtures", "transfers"],
+      "sectionCaption": "What to collect"
+    },
+    "maxResultsPerTeam": {
+      "title": "Results per team",
+      "type": "integer",
+      "description": "Newest results to return per team. 0 = the team's entire history (Arsenal: 5,077 matches, a century of them).",
+      "minimum": 0,
+      "default": 50
+    },
+    "maxTransfersPerTeam": {
+      "title": "Transfers per team",
+      "type": "integer",
+      "description": "Newest transfers to return per team. 0 = every transfer Flashscore lists (Arsenal: about 1,700, back to the 1970s).",
+      "minimum": 0,
+      "default": 50
+    },
+    "squadPerCompetition": {
+      "title": "Squad stats per competition",
+      "type": "boolean",
+      "description": "Besides the all-competitions squad table, add one squad table per competition (league, cups, Europe).",
+      "default": false
+    },
+    "scrapeSquadPlayers": {
+      "title": "Full profiles for every squad member",
+      "type": "boolean",
+      "description": "Also scrape the player page of everyone in each team's squad (about 30 extra player profiles per team).",
+      "default": false
+    },
+    "playerSections": {
+      "title": "Player data",
+      "type": "array",
+      "description": "Profile: club, position, age, date of birth, market value, contract expiry, height, current injury. Career: one row per season, club and competition. Last matches: the 10 most recent matches with rating and stats. Transfers: career moves with fees. Injuries: injury history.",
+      "editor": "select",
+      "items": {
+        "type": "string",
+        "enum": ["profile", "career", "lastMatches", "transfers", "injuries"],
+        "enumTitles": ["Profile", "Career", "Last matches", "Transfers", "Injuries"]
+      },
+      "default": ["profile", "career", "lastMatches", "transfers", "injuries"]
+    },
+    "maxItems": {
+      "title": "Max rows",
+      "type": "integer",
+      "description": "Stop after this many dataset rows in total.",
+      "minimum": 1,
+      "default": 10000,
+      "sectionCaption": "Limits"
+    },
+    "proxyConfiguration": {
+      "title": "Proxy",
+      "type": "object",
+      "description": "Not needed: Flashscore does not block by IP. The Actor escalates to Apify proxies automatically if it is ever refused.",
+      "editor": "proxy",
+      "default": { "useApifyProxy": false }
+    }
+  }
+}

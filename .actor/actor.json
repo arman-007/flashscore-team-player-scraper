@@ -1,0 +1,22 @@
+{
+  "actorSpecification": 1,
+  "name": "flashscore-team-player-scraper",
+  "title": "Flashscore Teams & Players: Squads, Transfers",
+  "description": "Scrape Flashscore team and player profiles: squads with season stats, full match history, transfers with fees, market values, contracts, career stats per season, last-match ratings and injury history. Football, basketball, hockey and more. Search by name. No API key.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "dockerfile": "../Dockerfile",
+  "readme": "../README.md",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  },
+  "minMemoryMbytes": 256,
+  "maxMemoryMbytes": 2048,
+  "defaultRunOptions": {
+    "build": "latest",
+    "memoryMbytes": 512,
+    "timeoutSecs": 3600
+  }
+}

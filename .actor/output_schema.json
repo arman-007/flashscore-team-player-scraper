@@ -1,0 +1,13 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Scraped Flashscore team and player data",
+  "description": "Team profiles, squad members, matches, transfers, player profiles, career seasons, player matches and injuries — one dataset row each, told apart by recordType.",
+  "properties": {
+    "dataset": {
+      "type": "string",
+      "title": "Results",
+      "description": "Dataset containing every scraped row.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items"
+    }
+  }
+}

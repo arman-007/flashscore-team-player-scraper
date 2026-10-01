@@ -1,0 +1,110 @@
+# The unit tests run against captured pages and feeds, so they stay green
+# through a Flashscore change -- the failure that actually takes this Actor
+# down, because every field depends on undocumented page markup, an embedded
+# player JSON blob, text feeds and a feed-sign header staying put. This
+# workflow is the other half: once a week it calls live Flashscore with the
+# build users are running and fails if field coverage collapses.
+name: Canary
+
+on:
+  schedule:
+    # Thursdays 08:17 UTC. Deliberately off the hour: GitHub's scheduler queues
+    # hardest on :00 and delays runs.
+    - cron: '17 8 * * 4'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: canary
+  cancel-in-progress: false
+
+jobs:
+  canary:
+    name: Call live Flashscore with the latest build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      # Installs the CLI and runs `apify login -t <token>`. The CLI reads its
+      # token from the keyring or auth file and ignores the APIFY_TOKEN
+      # environment variable, so an explicit login is required.
+      - uses: apify/setup-apify-cli-action@v1
+        with:
+          token: ${{ secrets.APIFY_TOKEN }}
+
+      - name: Run the deployed Actor against live Flashscore
+        id: run
+        run: |
+          set -o pipefail
+          apify call \
+            --build latest \
+            --memory 512 \
+            --timeout 600 \
+            --json \
+            --input-file scripts/canary-input.json > run.json
+          node -e '
+            const fs = require("node:fs");
+            const result = JSON.parse(fs.readFileSync("run.json", "utf8"));
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `dataset=${result.storage.defaultDatasetId}\n`);
+            fs.appendFileSync(process.env.GITHUB_OUTPUT, `run-url=${result.run.url}\n`);
+            console.log(`Run ${result.run.status}: ${result.run.url}`);
+            if (result.run.status !== "SUCCEEDED") process.exit(1);
+          '
+
+      # A run that finishes green but returns nothing usable is the exact
+      # failure mode this Actor is built to make impossible, so assert on the
+      # data, not just on the exit status.
+      - name: Check the returned data
+        env:
+          DATASET_ID: ${{ steps.run.outputs.dataset }}
+        run: |
+          set -o pipefail
+          apify datasets get-items "$DATASET_ID" --format json | node scripts/canary-check.mjs
+
+      # Email about a failed scheduled run is easy to miss and depends on each
+      # user's notification settings; an issue is durable and notifies watchers.
+      - name: Open or update the canary issue
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_URL: ${{ steps.run.outputs.run-url }}
+          WORKFLOW_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          gh label create canary --description "Automated canary failures" --color B60205 2>/dev/null || true
+
+          body="The weekly canary run failed. For this Actor that usually means one of these:
+
+          1. **Team match paging broke.** Fewer than 110 results means the \`pr_{sport}_{country}_{team}_{page}_0_en_1\` feed name changed, or the page lost \`country_id\` / \`participant_id\`. Check /team/arsenal/hA1Zm19f/ and \`cjs.initialFeeds['results']\`.
+          2. **The squad markup moved.** Squad checks read the hidden \`.lineup\` block: \`lineupTable__row\` rows and \`lineupTable__cell--{name}\` cells, with position titles such as Goalkeepers and Coach.
+          3. **The transfers feed moved.** Team transfers come from \`tetr_hA1Zm19f_1_{page}\` (RTT nodes with DATE, TD, TT, TJ; TEA and PLA children).
+          4. **The player page changed.** Profiles read \`.playerHeader__wrapper\` and the \`window.playerProfilePageEnvironment\` JSON (careerTables, lastMatchesData, transfersTable, injuryHistoryTable). Check /player/saka-bukayo/08NLEo06/.
+          5. **Search changed.** Name search calls s.livesport.services/api/v2/search/. If \"Bukayo Saka\" gives NO_SEARCH_MATCH, the result \`type\` names (Team, PlayerInTeam) or fields changed.
+          6. **The feed sign changed and the refresh failed.** Feeds need \`x-fsign\`; on a 401 the client re-reads \`feed_sign\` from a match page. If the log shows \`no feed_sign was found on a match page\`, the page no longer embeds it under that name.
+
+          - Workflow run: $WORKFLOW_URL
+          - Apify run: ${RUN_URL:-not started}
+
+          To reproduce locally:
+
+              apify call --build latest --json --input-file scripts/canary-input.json
+              apify datasets get-items <datasetId> --format json | node scripts/canary-check.mjs"
+
+          existing=$(gh issue list --label canary --state open --limit 1 --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body "$body"
+            echo "Commented on existing canary issue #$existing"
+          else
+            gh issue create \
+              --title "Canary failed: the deployed build stopped returning Flashscore team and player data" \
+              --label canary \
+              --body "$body"
+          fi
