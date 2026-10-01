@@ -250,3 +250,26 @@ holds 10. For a full match list, scrape the player's team history with
 
 **Can I get league tables or whole seasons?** That's the Flashscore League
 Archive Actor on this account.
+
+<!-- flashscore-links -->
+
+---
+
+## Ready-made examples
+
+Open one, press **Try for free**, and change the input to your own:
+
+- [Get Arsenal's squad, stats and transfers](https://apify.com/incognito_mode/flashscore-team-player-scraper/examples/arsenal-squad-and-transfers)
+- [Look up football players' market value and stats](https://apify.com/incognito_mode/flashscore-team-player-scraper/examples/football-player-market-values)
+- [Get transfer history with fees for top clubs](https://apify.com/incognito_mode/flashscore-team-player-scraper/examples/football-club-transfers-with-fees)
+- [Get NBA team rosters with player stats](https://apify.com/incognito_mode/flashscore-team-player-scraper/examples/nba-team-rosters)
+
+## More Flashscore Actors
+
+Same data source, same flat rows and pay-per-result pricing:
+
+- [Flashscore Betting Odds Scraper](https://apify.com/incognito_mode/flashscore-odds-scraper) — pre-match odds from 100+ bookmakers with opening prices, plus outright winner odds
+- [Flashscore Odds Movement Tracker](https://apify.com/incognito_mode/flashscore-odds-tracker) — line movement and exact closing lines on a schedule
+- [Flashscore Match Stats Scraper](https://apify.com/incognito_mode/flashscore-match-stats-scraper) — player stats with xG, lineups, box scores and team stats per match
+- [Flashscore League Archive](https://apify.com/incognito_mode/flashscore-league-archive-scraper) — every season's results, tables and top scorers, back to 1901
+- [Flashscore Tennis Scraper](https://apify.com/incognito_mode/flashscore-tennis-scraper) — ATP/WTA results, serve stats, point-by-point, draws and rankings
